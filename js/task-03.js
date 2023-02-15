@@ -12,15 +12,12 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
-
 const list = document.querySelector(".gallery");
 list.classList.add("task03List");
 const markup = images
-
   .map(
     (image) =>
       `<li ><img src=${image.url} alt=${image.alt} class=task03Element </li>`
   )
   .join("");
-
 list.insertAdjacentHTML("beforeend", markup);
