@@ -22,3 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.task03List {
+ list-style-type: none;
+display:flex;
+gap: 1rem;
+}
+
+.task03Element {
+height:10rem;
+}
