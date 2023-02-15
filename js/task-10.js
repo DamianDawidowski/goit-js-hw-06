@@ -6,9 +6,9 @@ const btnCreate = document.querySelector("button");
 const btnDestroy = btnCreate.nextElementSibling;
 const targetDiv = document.querySelector("#boxes");
 let inputVal = input.value;
-let count = 0;
 let dimension = 20;
 const createBoxes = () => {
+  let inputVal = input.value;
   for (let i = 1; i <= inputVal; i++) {
     dimension += 10;
     const newDiv = document.createElement("div");
@@ -16,10 +16,10 @@ const createBoxes = () => {
     newDiv.style.width = `${dimension}px`;
     newDiv.style.height = `${dimension}px`;
     targetDiv.append(newDiv);
-    count++;
   }
 };
 btnCreate.addEventListener("click", (event) => createBoxes());
 btnDestroy.addEventListener("click", (event) => {
   targetDiv.textContent = "";
+  dimension = 20;
 });
