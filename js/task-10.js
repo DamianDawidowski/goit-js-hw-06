@@ -18,8 +18,9 @@ const createBoxes = () => {
     targetDiv.append(newDiv);
   }
 };
-btnCreate.addEventListener("click", (event) => createBoxes());
-btnDestroy.addEventListener("click", (event) => {
+const destroyBoxes = () => {
   targetDiv.textContent = "";
   dimension = 20;
-});
+};
+btnCreate.addEventListener("click", (event) => createBoxes());
+btnDestroy.addEventListener("click", (event) => destroyBoxes());

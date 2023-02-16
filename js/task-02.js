@@ -6,7 +6,6 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-
 const ulList = document.querySelector("#ingredients");
 for (const ingredient of ingredients) {
   let liElement = document.createElement("li");
