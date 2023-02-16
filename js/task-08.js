@@ -6,7 +6,7 @@ function formSubmit(event) {
     elements: { email, password },
   } = event.currentTarget;
   if (email.value === "" || password.value === "") {
-    return console.log("Prosimy uzupełnić wszystkie pola!");
+    return alert("Prosimy uzupełnić wszystkie pola!");
   }
   console.log(`Email: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
